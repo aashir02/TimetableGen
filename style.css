@@ -4,18 +4,47 @@ body {
     padding: 20px;
 }
 
-#timetable {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+#input-fields {
     margin-bottom: 20px;
 }
 
-.grid-item {
-    padding: 20px;
-    background-color: #f0f0f0;
+#input-fields label {
+    display: inline-block;
+    width: 120px;
+}
+
+#input-fields input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+#input-fields button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#timetable {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 1 for days, 6 for periods */
+    grid-gap: 1px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
+}
+
+#timetable > div {
+    border: 1px solid #ccc;
+    padding: 10px;
     text-align: center;
+    background-color: #f9f9f9;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #controls {

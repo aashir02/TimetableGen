@@ -8,12 +8,29 @@
 </head>
 <body>
     <h1>Timetable Generator</h1>
+
+    <!-- Input Fields for Teachers and Subjects -->
+    <div id="input-fields">
+        <h2>Enter Teacher and Subject</h2>
+        
+        <label for="teacher-name">Teacher Name:</label>
+        <input type="text" id="teacher-name">
+        
+        <label for="subject-name">Subject:</label>
+        <input type="text" id="subject-name">
+        
+        <button onclick="addEntry()">Add Entry</button>
+    </div>
+
+    <!-- Timetable Display and Controls -->
     <div id="timetable">
         <!-- Timetable grid will go here -->
     </div>
+
     <div id="controls">
         <button onclick="generateTimetable()">Generate Timetable</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
